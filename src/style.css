@@ -9,15 +9,16 @@
   gap: 50px;
 }
 
-.left-heading {
-  display: flex;
-  justify-content: space-between;
-}
-
 .scores-container {
   display: flex;
   flex-direction: column;
   min-width: 250px;
+}
+
+.scores-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 table {
@@ -34,4 +35,10 @@ table {
 button {
   height: 20px;
   align-self: center;
+}
+
+#leaderboardInput {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
