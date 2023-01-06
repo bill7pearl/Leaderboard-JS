@@ -11,11 +11,9 @@ const fetchAPIData = async () => {
     const leaderboard = document.getElementById('leaderboard');
     data.result.forEach((obj) => {
       leaderboard.innerHTML += `
-                <table>
                 <tr>
                 <td>${obj.user} : ${obj.score}</td>
                 </tr>
-                </table>
             `;
     });
   };

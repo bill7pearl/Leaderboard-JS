@@ -1,6 +1,10 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: aliceblue;
+}
+
 .title {
-  margin-left: 15%;
-  margin-bottom: 50px;
+  text-align: center;
 }
 
 .main-content {
@@ -21,10 +25,14 @@
   justify-content: space-between;
 }
 
-table {
+#leaderboard {
   display: flex;
-  flex-direction: row;
-  border: 1px solid black;
+  flex-direction: column;
+}
+
+tbody {
+  border-bottom: 2px solid black;
+  padding: 5px;
 }
 
 .add-scores-container {
@@ -35,10 +43,17 @@ table {
 button {
   height: 20px;
   align-self: center;
+  background-color: antiquewhite;
+  box-shadow: 3px 3px black;
 }
 
 #leaderboardInput {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 5px;
+}
+
+input {
+  padding: 5px;
 }
