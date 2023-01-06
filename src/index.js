@@ -1,7 +1,7 @@
 import './style.css';
 import Leaderboard from './modules/constructor.js';
 
-const API_URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/123/scores';
+const API_URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/1nHfN6b4Dsu57fnGRPem/scores';
 const fetchAPIData = async () => {
   const request = await fetch(`${API_URL}`);
   const data = await request.json();
@@ -48,7 +48,7 @@ leaderboardInput.addEventListener('submit', (event) => {
   scores.innerHTML = '';
   nameInput.value = '';
   scoreInput.value = '';
-  setTimeout(fetchAPIData, 300);
+  fetchAPIData();
 });
 
 const refreshBtn = document.getElementById('refresh-button');
