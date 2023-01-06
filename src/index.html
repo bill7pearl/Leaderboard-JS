@@ -10,23 +10,20 @@
     <h1 class="title">Leaderboard</h1>
     <section class="main-content">
         <div class="scores-container">
-            <div class="left-heading">
+            <div class="scores-head">
             <h2>Recent scores</h2>
-            <button>Refresh</button>
+            <button id="refresh-button">Refresh</button>
             </div>
-            <table>
-                <tr><td>name: 100</td></tr>
-                <tr><td>name: 87</td></tr>
-                <tr><td>name: 39</td></tr>
-                <tr><td>name: 68</td></tr>
-                <tr><td>name: 71</td></tr>
-            </table>
+            <div id="leaderboard"></div>
         </div>
         <div class="add-scores-container">
             <h2>Add your score</h2>
-            <input type="text">
-            <input type="text">
-            <button>Submit</button>
+            <form id="leaderboardInput">
+            <input id="name-input" type="text" placeholder="your name...">
+            <input id="score-input" type="number" placeholder="your score...">
+            <button id="submit-button">Submit</button>
+        </form>
+        </div>
         </div>
     </section>
 </body>
